@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="result-page">
+
+<div class="result-container">
+    <h2>✨ Recommendations for "{{ anime_name }}"</h2>
+
+    {% if results[0] == "Anime not found" %}
+        <p class="error">❌ Anime not found. Try another name.</p>
+    {% else %}
+        <div class="card-container">
+            {% for anime in results %}
+                <div class="card">
+                    <h3>{{ anime }}</h3>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <br>
+    <a href="/">
+        <button>🔍 Search Again</button>
+    </a>
+</div>
+
+</body>
+</html>
