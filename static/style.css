@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* INDEX BACKGROUND */
+body.index-page {
+    background: url("https://wallpaperaccess.com/full/9223943.jpg") no-repeat center center/cover;
+    height: 100vh;
+}
+
+/* Overlay */
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Input */
+input {
+    padding: 14px;
+    width: 280px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+}
+
+/* Button */
+button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4b2b;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #ff1c1c;
+}
+
+/* RESULT PAGE */
+body.result-page {
+    background: url("https://wallpaperaccess.com/full/8729558.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+/* Glass container */
+.result-container {
+    background: rgba(0, 0, 0, 0.75);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    margin: 12px;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+/* Error */
+.error {
+    color: #ff4b2b;
+}
