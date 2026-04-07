@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="index-page">
+
+<div class="overlay">
+    <div class="container">
+        <h1>🎌 Anime Recommender</h1>
+        <p>Find your next favorite anime instantly</p>
+
+        <form action="/recommend" method="POST">
+            <input type="text" name="anime" placeholder="Enter anime name..." required minlength="2">
+            <br>
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
